@@ -1,4 +1,5 @@
-import { Footer, Header, Loading } from '@/components';
+import { Footer, Loading } from '@/components';
+import { Feed } from '@/modules/feed/feed';
 import Home from '@/modules/home';
 import React, { PropsWithChildren } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
@@ -7,13 +8,16 @@ const elements = [
   {
     Component: Home,
     path: '/'
+  },
+  {
+    Component: Feed,
+    path: '/feed'
   }
 ];
 
 export const RouterProvider = ({ children }: PropsWithChildren) => {
   return (
     <BrowserRouter>
-      <Header />
       <Routes>
         {elements.map(({ Component, path }, idx) => (
           <Route

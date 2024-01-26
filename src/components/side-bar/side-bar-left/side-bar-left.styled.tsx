@@ -2,7 +2,7 @@ import styled from 'styled-components';
 export const Wrapper = styled.div`
   background: linear-gradient(136deg, rgba(254, 0, 146, 0.3) 0%, rgba(0, 3, 121, 0) 63.57%);
   width: 20%;
-  height: 100vh;
+  min-height: 100vh;
   padding: 32px;
   gap: 24px;
 

@@ -4,34 +4,16 @@ export const PrimaryButton = ({ children, w }: { children: any; w?: number }) =>
   return <PrimaryBtn w={w}>{children}</PrimaryBtn>;
 };
 export const SecondaryButton = ({ children, w }: { children: any; w?: number }) => {
-  return (
-    <SecondButton w={w}>
-      <div className='layer1'>
-        <div className='layer2'>
-          <div className='layer3'>{children}</div>
-        </div>
-      </div>
-    </SecondButton>
-  );
+  return <SecondButton w={w}>{children}</SecondButton>;
 };
 export const PrimaryBtn = styled.div<{ w: any }>`
-  width: fit-content;
-  border-radius: 40px;
-  background: #ff31a7;
   display: flex;
-  align-items: center;
+  width: 176px;
+  padding: 14px 0px;
   justify-content: center;
-  white-space: nowrap;
-  padding: 16px 40px;
-  cursor: pointer;
-
-  color: #fff;
-  text-align: center;
-  font-family: Avenir;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: 150%; /* 30px */
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.064px;
 `;
 
 export const SecondButton = styled.div<{ w: any }>`

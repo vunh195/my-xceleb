@@ -17,3 +17,38 @@ export const Description = styled.div`
   font-weight: 500;
   line-height: 150%; /* 30px */
 `;
+
+export const Head1 = styled.div`
+  color: #fff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.08px;
+`;
+export const Head2 = styled.div`
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.056px;
+`;
+
+export const ValueText = styled.div`
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.056px;
+`;
+export const LabelText = styled.div`
+  color: #9c9c9c;
+  text-align: right;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.056px;
+`;

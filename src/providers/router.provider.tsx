@@ -1,5 +1,5 @@
 import { Footer, Loading } from '@/components';
-import { Feed } from '@/modules/feed/feed';
+import { FeedPage } from '@/modules/feed-page/feed-page';
 import Home from '@/modules/home';
 import React, { PropsWithChildren } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
@@ -10,7 +10,7 @@ const elements = [
     path: '/'
   },
   {
-    Component: Feed,
+    Component: FeedPage,
     path: '/feed'
   }
 ];
